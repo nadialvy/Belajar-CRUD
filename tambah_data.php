@@ -9,7 +9,7 @@
 <body>
     <h1>Tambah Data Mahasiswa</h1>
 
-    <form action="proses_tambah_data.php" method="POST">
+    <form action="proses_tambah_data.php" method="POST" enctype="multipart/form-data">
         <ul>
             <li>
                 <label for="nrp">NRP </label>
@@ -29,7 +29,7 @@
             </li>
             <li>
                 <label for='gambar'>Gambar</label>
-                <input type='text' name='gambar' id='gambar' required>
+                <input type='file' name='gambar' id='gambar' required>
             </li>
             <li>
                 <button name="submit" type="submit">Kirim</button>
