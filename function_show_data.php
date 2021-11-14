@@ -1,10 +1,9 @@
 <?php 
-    // koneksi database
-    $conn = mysqli_connect("localhost", "root", "", "phpdasar");
 
-    //query
-    function query($query){
-        global $conn;
+    //query show data
+    function query($query){ //$query = SELECT * FROM mahasiswa
+        include 'koneksi.php';
+        
         $data = mysqli_query($conn, $query);
         
         $wadah = [];
@@ -16,4 +15,5 @@
         
     }
 
+    
 ?>

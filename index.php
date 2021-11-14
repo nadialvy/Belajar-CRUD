@@ -1,10 +1,6 @@
 <?php 
-    // $conn = mysqli_connect("localhost", "root", "", "phpdasar"); //koneksi
-    // $result = mysqli_query($conn, "SELECT * FROM mahasiswa"); //query 
-    require 'function_index.php';
-    $mahasiswa = query("SELECT * FROM mahasiswa");
-    // var_dump($mahasiswa);
-    
+    require 'function_show_data.php';
+    $mahasiswa = query("SELECT * FROM mahasiswa");    
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +14,7 @@
 <body>
 
     <h1>Daftar Mahasiswa</h1>
+    <a href="tambah_data.php">Tambah Data</a>
 
     <table border="2" cellpadding="25" cellspacing="0">
         <tr>
