@@ -33,7 +33,7 @@
                 <td><?= $i; ?></td>
                 <td>
                     <a href="">Ubah</a> |
-                    <a href="">Hapus</a>
+                    <a href="proses_hapus_data.php?id=<?= $mhs["id"]; ?>" onclick="return confirm ('Apakah anda ingin menghapus data ini?')">Hapus</a>
                 </td>
                 <td><img src="asset_index/<?= $mhs["gambar"]; ?> " alt=""></td>
                 <td><?= $mhs["nrp"] ?></td>

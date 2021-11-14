@@ -5,11 +5,11 @@
     
         // $_POST isinya array asosiatif, sehingga harus
         // mengambil data
-        $nrp = $_POST["nrp"];
-        $nama = $_POST["nama"];
-        $email = $_POST["email"];
-        $jurusan = $_POST["jurusan"];
-        $gambar = $_POST["gambar"];
+        $nrp = htmlspecialchars( $_POST["nrp"] ) ;
+        $nama = htmlspecialchars( $_POST["nama"] ) ;
+        $email = htmlspecialchars( $_POST["email"] ) ;
+        $jurusan = htmlspecialchars( $_POST["jurusan"] );
+        $gambar = htmlspecialchars( $_POST["gambar"] );
 
         //cek semua form harus terisi
         if ( empty($nrp) ){
